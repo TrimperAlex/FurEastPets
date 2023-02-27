@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root to: 'home#index'
   get 'pages/about'
 
   devise_for(:user, {
