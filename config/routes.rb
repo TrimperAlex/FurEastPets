@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root 'home#index'
+  # get: 'store', to: 'home#index'
+  # resources :store
+
   get 'pages/about'
 
   devise_for(:user, {
